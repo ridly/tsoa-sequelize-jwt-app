@@ -1,8 +1,8 @@
 # tsoa-sequelize-jwt-app
 Boilerplate project for a TypeScript API with TSOA, ExpressJS, Sequelize and Swagger UI
 
-The api endpoint: http://localhost:1202/api/ 
-Swagger UI: http://localhost:1202/docs
+The api endpoint: http://localhost:8080/api/v1/ 
+Swagger UI: http://localhost:8080/docs
 
 # Motivation
 

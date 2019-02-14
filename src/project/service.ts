@@ -1,6 +1,6 @@
 import { Project } from './model';
 
-export class Service {
+class Service {
 
     public async getProject(id: number): Promise< Project | null > {
         return Project.findOne({ where: { id } });

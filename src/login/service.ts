@@ -5,7 +5,7 @@ import { User, IJWToken } from './model';
 
 const secret = process.env.JWT_SECRET || 'my@#$secret';
 
-export class Service {
+class Service {
 
     public async loginUser(email: string, password: string): Promise< IJWToken | null > {
         const user = await User.findOne({ where: { email } });

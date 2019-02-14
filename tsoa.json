@@ -1,0 +1,35 @@
+{
+    "swagger": {
+      "description": "Boilerplate project for a TypeScript API with TSOA, ExpressJS, Sequelize and Swagger UI",
+      "version": "0.1.0",
+      "name": "tsoa-sequelize-jwt-app",
+  
+      "outputDirectory": "./src",
+      "entryFile": "./src/server.ts",
+      "host": "localhost:1202",
+      "basePath": "/api/v1",
+      "securityDefinitions": {
+        "api_key": {
+            "type": "apiKey",
+            "name": "api_token",
+            "in": "query"
+          },
+          "jwt": {
+            "name": "jwt",
+            "type": "jwt",
+            "scopes": {
+              "read:project": "read project"
+            }
+          }
+       }
+    },
+    "routes": {
+        "basePath": "/api/v1",
+        "entryFile": "./src/server.ts",
+        "routesDir": "./src",
+        "authenticationModule": "./src/authentication.ts"
+    },
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  }

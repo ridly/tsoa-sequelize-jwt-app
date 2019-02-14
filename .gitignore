@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+.vscode/
+dist/
+src/routes.ts
+src/swagger.json
+.env
